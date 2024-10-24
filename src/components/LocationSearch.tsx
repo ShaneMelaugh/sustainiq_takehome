@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
-import { LocationFetcherProps, FormInputs } from '../types/types';
+import { LocationProps, FormInputs } from '../types/types';
 
-const LocationSearch: React.FC<LocationFetcherProps> = ({ setLocation }) => {
+const LocationSearch: React.FC<LocationProps> = ({ setLocation }) => {
     const { register, handleSubmit, formState: { errors } } = useForm<FormInputs>();
     const key = import.meta.env.VITE_API_KEY;
 

@@ -4,9 +4,9 @@ import WeeklyWeather from './WeeklyWeather';
 import CurrentWeather from './CurrentWeather';
 import CurrentWeatherDetails from './CurrentWeatherDetails';
 import { WiDayHaze } from "react-icons/wi";
-import { WeatherData, WeeklyWeatherData, WeatherFetcherProps } from '../types/types';
+import { WeatherData, WeeklyWeatherData, WeatherProps } from '../types/types';
 
-const Weather: React.FC<WeatherFetcherProps> = ({ lat, lon, name }) => {
+const Weather: React.FC<WeatherProps> = ({ lat, lon, name }) => {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [weeklyWeather, setWeeklyWeather] = useState<WeeklyWeatherData[] | null>();
   const [isLoading, setIsLoading] = useState<boolean>(false);

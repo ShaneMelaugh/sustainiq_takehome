@@ -15,13 +15,13 @@ export interface WeatherData {
     time: number;
   }
   
-  export interface WeatherFetcherProps {
+  export interface WeatherProps {
     lat: number;
     lon: number;
     name: string;
   }
 
-  export interface LocationFetcherProps {
+  export interface LocationProps {
     setLocation: (location: { lat: number; lon: number; display_name: string }) => void;
   }
   
