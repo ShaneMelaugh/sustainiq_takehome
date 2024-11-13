@@ -1,30 +1,30 @@
-export interface WeatherData {
-    temperature?: number;
-    apparent_temperature?: number;
-    wind_speed?: number;
-    wind_gusts?: number;
-    wind_direction?: number;
-    cloud_cover?: number;
-    interval?: number;
-    rain?: number;
-    time?: number;
-  }
-  
-  export interface WeeklyWeatherData {
-    temperature: number;
-    time: number;
-  }
-  
-  export interface WeatherProps {
-    lat: number;
-    lon: number;
-    name: string;
-  }
+export interface Card {
+  title: string;
+  desc: string;
+}
 
-  export interface LocationProps {
-    setLocation: (location: { lat: number; lon: number; display_name: string }) => void;
-  }
-  
-  export interface FormInputs {
-      query: string;
-    }
+export interface TableData {
+  id: number;
+  location: string;
+  deliveryDate: string;
+  name: string;
+  company: string;
+  distance: number;
+  kgCO2e: number;
+  tCO2e: number;
+}
+
+export interface FormData {
+  name: string;
+  company: string;
+  deliveryDate: Date | null;
+  reason: string;
+  distanceTravelled: string;
+  notes?: string;
+  file?: FileList;
+}
+
+export interface DropdownOption {
+  value: string;
+  label: string;
+}

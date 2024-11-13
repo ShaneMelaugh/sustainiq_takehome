@@ -1,4 +1,4 @@
-# CGX Takehome
+# SustainIQ Takehome
 
 # Install Deps and Run
 
