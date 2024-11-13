@@ -23,8 +23,8 @@ const Table: React.FC = () => {
     }
   };
 
-  const startIdx = (currentPage - 1) * rowsPerPage;
-  const currentData = data.slice(startIdx, startIdx + rowsPerPage);
+  const index = (currentPage - 1) * rowsPerPage;
+  const currentData = data.slice(index, index + rowsPerPage);
 
   return (
     <div className="container mx-auto p-4 overflow-x-auto bg-white border border-gray-200 rounded-lg shadow my-4">
